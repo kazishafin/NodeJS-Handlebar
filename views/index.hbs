@@ -1,0 +1,26 @@
+
+ {{> header }}
+
+ <h2>Covid-19 Update</h2>
+ <hr>
+ 
+    {{#if covidData.isAffected }}
+
+      {{#with covidData}}
+
+          <h4>Name of Country: {{country }}</h4>
+          <h4>Total Affected <p style="color: mediumblue;">{{affected }}</p> </h4>
+          <h4>Recover <p style="color: green;">{{recovery }}</p></h4>
+          <h4>Death <p style="color: red;">{{death}}</p> </h4>
+
+      {{/with}}
+        
+    {{else}}
+        <h4>NO DATA FOUND</h4>
+    
+    {{/if}}
+
+  
+  
+    
+{{> footer }}
