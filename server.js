@@ -3,6 +3,7 @@ const expHbs = require('express-handlebars');
 const app = express();
 const path = require('path');
 const controller = require ('./controllers/covidController');
+const port = process.env.PORT || 3001;
 
 
 
@@ -37,6 +38,6 @@ app.get('/countries', controller.countries);
 app.get('/vaccines', controller.list);
 
 
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log("server is running");
 });
