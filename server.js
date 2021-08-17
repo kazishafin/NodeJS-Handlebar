@@ -3,7 +3,7 @@ const expHbs = require('express-handlebars');
 const app = express();
 const path = require('path');
 const controller = require ('./controllers/covidController');
-const port = process.env.PORT || 80;
+const port = process.env.PORT || 8000;
 
 
 
